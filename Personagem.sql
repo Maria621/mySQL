@@ -30,7 +30,7 @@ SELECT * FROM tb_personagens WHERE nome LIKE '%C%';
 
 -- SELECT utilizando LEFT JOIN para unir dados de tb_personagens com tb_classes
 SELECT * FROM tb_personagens p
-LEFT JOIN tb_classes c ON p.classe_id = c.id;
+INNER JOIN tb_classes c ON p.classe_id = c.id;
 
 -- SELECT utilizando INNER JOIN para achar os personagens do tipo arqueiro
 SELECT p.* FROM tb_personagens p
