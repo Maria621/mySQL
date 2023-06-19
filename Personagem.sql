@@ -5,19 +5,20 @@ CREATE TABLE tb_personagens (
     nome VARCHAR(255) NOT NULL,
     poder_ataque INT,
     poder_defesa INT,
+    vida VARCHAR(255) NOT NULL,
     classe_id INT,
     FOREIGN KEY (classe_id) REFERENCES tb_classes(id)
 );
 
-INSERT INTO tb_personagens (nome, poder_ataque, poder_defesa, classe_id) VALUES
-('Rhysand',' 2500', '1800',' 1'),
-('Cassian',' 2100', '1200', '2'),
-('Azriel', '1800',' 2500',' 3'),
-('Julieta', '2200', '1600',' 4'),
-('Jullian','2800', '1900',' 1'),
-('Elise', '1900', '2100', '2'),
-('Feyre', '1700', '2300', '3'),
-('Mor', '2300', '2000', '5');
+INSERT INTO tb_personagens (nome, poder_ataque, poder_defesa, vida, classe_id) VALUES
+('Rhysand',' 2500', '1800', 10 ,' 1'),
+('Cassian',' 2100', '1200', 8 , '2'),
+('Azriel', '1800',' 2500', 7 ,' 3'),
+('Julieta', '2200', '1600', 5 ,' 4'),
+('Jullian','2800', '1900', 9 ,' 1'),
+('Elise', '1900', '2100', 10 , '2'),
+('Feyre', '1700', '2300', 6 , '3'),
+('Mor', '2300', '2000', 9 , '5');
 
 -- SELECT que retorna todos os personagens cujo poder de ataque seja maior que 2000
 SELECT * FROM tb_personagens WHERE poder_ataque > 2000;
