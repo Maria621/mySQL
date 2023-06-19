@@ -16,8 +16,8 @@ INSERT INTO tb_pizzas (nome, Valor, quantidade, categorias_id) VALUES
 ('Pizza Vegetariana', '32.00', '7', '4'),
 ('Pizza Vegana Suprema', '77.00', '6', '5'),
 ('Pizza de Romeu e Julieta', '50.00', '12', '1'),
-('Pizza de Frago com Catupiry', '43.00', '9', '2'),
-('Pizza Clabresa com Bacon', '79.00', '4', '3');
+('Pizza de Frago com Bacon', '43.00', '9', '2'),
+('Pizza Calabresa com Bacon', '79.00', '4', '3');
 
 -- SELECT que retorna todos os personagens cujo poder de ataque seja maior que 2000
 SELECT * FROM tb_pizzas WHERE Valor > 45;
