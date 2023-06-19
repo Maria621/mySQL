@@ -30,7 +30,7 @@ SELECT * FROM tb_pizzas WHERE nome LIKE '%M%';
 
 -- SELECT utilizando LEFT JOIN para unir dados de tb_personagens com tb_classes
 SELECT * FROM tb_pizzas p
-LEFT JOIN tb_categorias c ON p.categorias_id = c.id;
+Inner JOIN tb_categorias c ON p.categorias_id = c.id;
 
 -- SELECT utilizando INNER JOIN para achar os personagens do tipo arqueiro
 SELECT p.* FROM tb_pizzas p
