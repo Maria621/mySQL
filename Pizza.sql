@@ -3,7 +3,11 @@ use  db_pizzaria_legal;
 CREATE TABLE tb_pizzas (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
+<<<<<<< HEAD
     Valor DECIMAL(6,2) NOT NULL,
+=======
+    Valor DECIMAL(6,2), NOT NULL
+>>>>>>> f00f1a84b3eb7f9cc6cadedbcc8cf362a5f8dbde
     quantidade INT,
     borda VARCHAR(225) NOT NULL,
     categorias_id INT,
@@ -31,7 +35,7 @@ SELECT * FROM tb_pizzas WHERE nome LIKE '%M%';
 
 -- SELECT utilizando LEFT JOIN para unir dados de tb_personagens com tb_classes
 SELECT * FROM tb_pizzas p
-LEFT JOIN tb_categorias c ON p.categorias_id = c.id;
+Inner JOIN tb_categorias c ON p.categorias_id = c.id;
 
 -- SELECT utilizando INNER JOIN para achar os personagens do tipo arqueiro
 SELECT p.* FROM tb_pizzas p
